@@ -1,0 +1,299 @@
+body{
+	background: #ddd
+}
+a {
+	color: #6B7985;
+	text-decoration: none;
+	outline: none
+}
+.trs {
+	height: 50px;
+}
+a:hover {
+	color: #084b91;
+	text-decoration: none
+}
+.loginwarrp{
+	margin: 250px auto;
+    width: 400px;
+    padding: 30px 50px;
+    background: #FFFFFF;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: '΢���ź�','��Ȫ������','����';
+}
+.loginwarrp .logo{
+	width:100%;
+	height:44px;
+	line-height: 44px;
+	font-size: 20px;
+	text-align: center;
+	border-bottom:1px solid #ddd;
+}
+.loginwarrp .login_form{
+	margin-top: 15px;
+}
+.loginwarrp .login_form .login-item{
+	padding: 2px 8px;
+	border:1px solid #dedede;
+	border-radius: 8px;
+	margin-top: 10px;
+}
+.loginwarrp .login_form .login_input{
+	height: 35px;
+    border: none;
+    line-height: 35px;
+    width: 200px;
+    font-size: 14px;
+    outline: none;
+}
+.loginwarrp .login_form .verify{
+	float: left;
+}
+.loginwarrp .verify .verify_input{
+	width: 160px;
+}
+.loginwarrp .verifyimg{
+	height: 30px;
+    margin: 20px 0 0 20px;
+}
+.loginwarrp .login-sub{
+	text-align: center;
+}
+.loginwarrp .login-sub input{
+	cursor: pointer;
+	margin-top:15px;
+    background: #45B549;
+    line-height: 35px;
+    width: 150px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: '΢���ź�','��Ȫ������','����';
+    border: none;
+    border-radius: 5px;
+}
+.loginwarrp .login_form .login-item .error{
+	color: #F00;
+	font-family: '΢���ź�','��Ȫ������','����';
+}
+
+/* regist */
+#ad{
+	position:absolute;
+	top:500px;
+	left:431px;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden
+}
+
+.clearfix {
+	display: inline-table
+}
+
+* html
+.clearfix {
+	height: 1%
+}
+
+.clearfix {
+	display: block
+}
+
+*+html
+.clearfix {
+	min-height: 1%
+}
+
+.btn02 {
+	color: #fff;
+	background: #CC00FF;
+	display: block;
+	width: 100px;
+	margin: 20px auto;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+
+/* modal */
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000000;
+	opacity: 0.6;
+	filter: alpha(opacity = 60)
+}
+
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 1050;
+	width: 560px;
+	margin: -250px 0 0 -280px;
+	background-color: #ffffff;
+	border: 1px solid #999;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	*border: 1px solid #999;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	outline: none;
+	-webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box
+}
+
+.close {
+	cursor: pointer;
+	padding: 2px 3px;
+	cursor: pointer;
+	padding: 2px 3px;
+	position: absolute;
+	right: 10px;
+	top: 14px
+}
+
+.close:hover {
+	background-color: grey;
+	color: #ffffff
+}
+
+.button-blue {
+	display: block;
+	float: left;
+	padding: 5px 0;
+	width: 80px;
+	margin-right: 10px;
+	color: #fff;
+	background: #407acc;
+	text-align: center;
+	cursor: pointer
+}
+
+.button-blue:hover {
+	background: #084b91;
+	text-decoration: none;
+	color: #ffffff
+}
+
+.button-grey {
+	display: block;
+	float: left;
+	padding: 5px 0;
+	width: 80px;
+	color: #fff;
+	background: #ccc;
+	text-align: center;
+	cursor: pointer
+}
+
+.button-grey:hover {
+	background: #aaa;
+	text-decoration: none
+}
+
+.signup-form .form-arrow,
+	{
+	display: block;
+	width: 30px;
+	height: 15px;
+	background: url(/static/img/arrow.png?2013033000) no-repeat;
+	position: absolute;
+	left: 95px;
+	top: -15px
+}
+
+ .signup-form input {
+	padding: 9px 9px 9px 9px;
+	margin-bottom: 20px;
+	width: 94%
+}
+
+ .signup-form .forgot,.signup-form .login, .signup-form .reg {
+	width: 302px;
+	padding: 0;
+	margin: 0 0 10px 0;
+	height: 35px;
+	font-size: 18px;
+	cursor: pointer
+}
+
+.signup-form label.remember
+	{
+	font-size: 13px
+}
+
+
+.signup-form a.forgot{
+	font-size: 13px;
+	float: right;
+	margin-top: 2px;
+	width: auto;
+	cursor: pointer
+}
+
+.signup-form p.error {
+	font-size: 13px;
+	margin-bottom: 5px;
+	color: #b22d2d
+}
+
+#signup-modal, .modal {
+	display: none;
+	width: 300px;
+	padding: 0 40px 20px;
+	background: white;
+	border: 5px solid rgba(0, 0, 0, 0.2);
+	margin-left: -190px;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 40px;
+	box-shadow: 0 1px 0 white inset;
+	margin-top: -267px
+}
+
+#signup-modal a:hover, #login-modal a:hover, #forgetform a:hover, .modal a:hover
+	{
+	text-decoration: none
+}
+
+.modal h1,#signup-modal h1 {
+	margin: 0 -40px;
+	background: #EEE;
+	border-bottom: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+	font-size: 16px;
+	padding: 13px 40px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	text-align: center;
+	margin-bottom: 30px
+}
+
+.modal .close, #signup-modal .close
+	{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 12px 18px 16px 18px;
+	height: 16px;
+	overflow: hidden;
+	opacity: .8;
+	border-left: 1px solid #BBB
+}

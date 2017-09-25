@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+	<constant name="struts.devMode" value="true"></constant>
+	
+	
+	<package name="default" namespace="/" extends="struts-default"></package>
+	
+	<package name="users" namespace="/users" extends="struts-default">		
+         <action name="*_*" class="action.{1}Action"
+            method="{2}">
+            <result name="login_success">/users/LoginRegist_success.jsp</result>
+            <result name="login_failure">/users/LoginRegist_failure.jsp</result>         
+            <result name="regist_success">/users/LoginRegist.jsp</result>
+            <result name="regist_failure">/users/LoginRegist_failure.jsp</result> 			
+        </action> 		       
+    </package>
+    
+    <package name="students" namespace="/students" extends="struts-default" > 	    		    		
+    	
+    	<action name="*_*" class="action.{1}Action" method="{2}">
+    		<result name="pagecount_query_success" type="chain">Students_query</result>
+    		<result name="query_success" >/students/Students_query.jsp</result>
+    		
+    		<result name="delete_success" type="chain">Students_pagecount</result>   		
+    		<result name="search_delete_success" type="chain">Students_spagecount</result>
+    		
+    		<result name="add_success">/students/Students_add_success.jsp</result>
+    		
+    		<result name="modify_success">/students/Students_update.jsp</result>
+    		<result name="update_success">/students/Students_update_success.jsp</result>
+    		
+    		<result name="search_query_success" type="chain">Students_spagecount</result>
+    		<result name="pagecount_search_success" type="chain">Students_search</result>  		  		
+    		<result name="search_success">/students/Search_success.jsp</result>
+    		
+    		<result name="error">error.jsp</result>
+    		
+   
+    	</action>   	
+    </package>
+	
+	<package name="Links" namespace="/links" extends="struts-default">
+		<action name="*_*" class="action.{1}Action" method="{2}">
+		
+			<result name="query">/students/Students_query.jsp</result>
+			
+			<result name="search">/students/Students_search.jsp</result>
+			
+			<result name="add">/students/Students_add.jsp</result>
+			
+			<result name="delete">/students/Students_delete.jsp</result>
+			
+			<result name="update">/students/Students_update.jsp</result>
+			
+			<result name="loginregist">/users/LoginRegist.jsp</result>
+			
+		</action>
+	
+	</package>
+    
+
+    <!-- Add packages here -->
+</struts>
